@@ -1,0 +1,446 @@
+/*--------global stuff-----------*/
+:root {
+    --yellow: #EAC926;
+    --dark-blue: #03264C;
+    --light-blue: #1259c3;
+    --gray: #666666;
+    --light-gray: #ebebeb;
+    --green: #39b54a;
+    --base-font-family: 'Roboto', sans-serif
+  }
+
+* {
+    background-color: #ebebeb;
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+}
+
+header{
+    background-color: #EAC926;
+}
+
+p {
+    font-size: 12px;
+}
+
+h2 {
+	font-size: 24px;
+}
+
+/*----------Header stuff--------*/
+
+header ul {
+    display: none;
+}
+
+header ul li {
+    list-style-type: none;
+    margin: 0; 
+    padding: 0;
+}
+
+header ul li a {
+    text-decoration: none;
+    color:black;
+}
+
+header div i {
+    display: block;
+    text-align: center;
+    color: white;
+    background-color: #1259c3;
+    padding: 6px;
+    margin: auto;
+}
+
+header p {
+    text-align: center;
+    background-color: #EAC926;
+}
+
+.logo-search-slogan{
+    background-color: #EAC926;
+}
+
+.logo-search-together{
+    display: flex;
+    background-color: #EAC926;
+}
+
+.logo{
+    background-color: #EAC926;
+    width: 50%;
+}
+
+.main-logo{
+    background-color: #EAC926;
+    width: 100%;
+}
+
+.search-bar{
+    background-color: #EAC926;
+    width: 50%;
+}
+
+.lupita{
+    background-color: #EAC926;
+}
+
+.slogan{
+    text-align: center;
+}
+
+.burger-icon-settings{
+    display: block;
+    text-align: center;
+    background-color: #EAC926;
+}
+
+/*------------Section for home banner-------------*/
+
+section div img {
+    width: 90vw;
+    margin: auto;
+}
+
+/*--------Main stuff:based on last visit-----------*/
+
+main {
+    width: 90vw;
+    margin: auto;
+    margin-bottom: 20px;
+}
+
+/*------------main elements--------------*/
+
+
+
+.article-box-settings {
+    margin-top: 15px;
+    margin-bottom: 20px;
+	border: solid 5px #ebebeb;
+    background-color: white;
+}
+
+.price-and-discounts{
+    display: flex;
+    flex-direction: row;
+    background-color: white;
+    line-height: 5px;
+}
+
+article h3 {
+    color: #666666;
+    background-color: white;
+    display: none;
+}
+
+article img {
+    width: 100%;
+}
+
+.fa-truck {
+    color: #39b54a;
+    background-color: #fff;
+    padding: 10px;
+    border: solid #39b54a 1px;
+    border-radius: 100%;
+}
+
+.price-tag {
+    background-color: white;
+    font-size: 18px;
+    width: 30%
+}
+
+.discounts {
+    background-color: white;
+    color: #39b54a;
+    font-size: 16px;
+    width: 70;
+}
+
+.yellow-background {
+    background-color: #EAC926;
+}
+
+/*----------crear-producto.html Forms-------------*/
+.formulario{
+    border: dotted 3px red;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+section form div{
+    margin-top: 7px;
+    margin-bottom: 7px;
+    display: block;
+
+}
+
+
+/*---------------Registo.html forms-------------*/
+
+.form-style{
+    display: flex;
+    flex-direction: column;
+}
+
+main form div {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+input{
+    background-color: white;
+    border: none;
+    border-radius: 5px;
+    margin: 5px 3px;
+}
+
+.checkboxes{
+    display: flex;
+    flex-direction: column;
+}
+
+.individual-checkbox{
+    font-size: 15px;
+}
+
+.myButton {
+	background-color:#3f5c93;
+	border-radius:6px;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:15px;
+	padding:10px 44px;
+	text-decoration:none;
+}
+.myButton:hover {
+	background:linear-gradient(to bottom, #415989 5%, #3f5c93 100%);
+	background-color:#415989;
+}
+.myButton:active {
+	position:relative;
+	top:1px;
+}
+
+
+/*-----------All the footer stuff---------------*/
+
+footer{
+    text-align: center;
+    background-color: white;
+}
+
+footer div{
+    background-color: white;
+}
+
+footer div i{
+    padding-bottom: 10px;
+    background-color: white;
+    font-size: 2em;
+    color: #1259c3;
+}
+
+footer div h3{
+    background-color: white;
+}
+
+footer div p{
+    background-color: white;
+}
+
+/*--------------Media Queries------------------*/
+
+@media(min-width: 426px){
+    /*make the description of the articles disappear*/
+	article h3 {
+        color: #666666;
+        background-color: white;
+        display: block;
+    }
+
+    /*make the articles be horizontal (two in a row)*/
+
+    article img {
+        width: 100%;
+    }
+
+    section article img{
+        width: 100%;
+    }
+
+    .article-columns {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    /*Add a shade to the articles and STILL make it horizontal*/
+
+    .article-box-settings{
+        max-width: 40vw;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        border: solid 5px #ebebeb;
+        background-color: white;
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    }
+    /*Make the slogan be along with the logo-search div*/
+    .logo-search-together{
+        justify-content: center;
+        align-items: stretch;
+        width: 540px;
+    }
+
+    .search-bar{
+        width: 36%;
+    }
+
+    .logo-search-slogan{
+        display: flex;
+        background-color: #EAC926;
+    }
+
+    /*Better styling for forms*/
+    main form div{
+        margin-left: 25%;
+    }
+
+    input{
+        width: 65%;
+    }
+
+    .individual-checkbox{
+        list-style-type: none;
+    }
+
+    .checkbox-input{
+        width: 10px;
+    }
+
+}
+
+@media(min-width: 769px){
+
+    /*make the burguer icon disappear*/
+    header div i {
+        display: none;
+    }
+
+    .burger-icon-settings{
+        display: none;
+    }
+
+    /*Make the item list appear*/
+
+    header ul {
+        display: block;
+    }
+
+    /*Make the navbar be horizontal*/
+
+    .logo-search-slogan{
+        background-color: #EAC926;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    header div {
+        align-items: center;
+        margin-top: 10px;
+    }
+
+    header nav {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 30px;
+    }
+
+    header nav ul {
+        display: flex;
+    }
+
+    header nav ul li {
+        margin: 0 15px;
+    }
+
+    /*make the articles be horizontal (four in a row)*/
+
+    .article-columns {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        justify-content: space-between;
+    }
+
+    .article-box-settings{
+        max-width: 20vw;
+    }
+
+    /*Make the footer be horizontal*/
+    .footer-features {
+        margin: 30px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    /*Make the slogan be along with the logo-search div*/
+    .logo-search-together{
+        width: 650px;
+
+        align-items: center;
+    }
+
+    .search-bar{
+        width: 31%;
+    }
+
+    .logo-search-slogan{
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    /*hovering on the product divs*/
+
+    .article-box-settings:hover{
+        box-shadow: 0px 0px 10px rgb(43, 42, 42);
+    }
+
+    /*dissapearing descriptions on products when hovering*/
+
+    main section article h3{
+        display: block;
+        visibility: hidden;
+    }
+
+    main section article:hover h3{
+        visibility: visible;
+    }
+
+    /*Rotating truck on products when hovering*/
+
+    .fa-truck{
+        transition-duration: 500ms;
+    }
+
+    .article-box-settings:hover i{
+        transform: rotate(-90deg);
+    }
+
+    /*Hovering over the form submit button*/
+
+    .myButton:hover {
+        background:linear-gradient(to bottom, #0022AA 5%, #0022AA 100%);
+        background-color:#0022AA;
+    }
+
+    /*hovering on the footer icons*/
+
+    footer div div i:hover{
+        color: #39b54a;
+    }
+}
